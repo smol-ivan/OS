@@ -2,8 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_ITEMS 100
-#define MAX_LINE 100
+#define MAX_ITEMS 50
 
 typedef struct
 {
@@ -21,7 +20,7 @@ int main()
   Articulo articulos[MAX_ITEMS];
   int count = 0;
 
-  archivo = fopen("../data/papeleria.txt", "r");
+  archivo = fopen("data/papeleria.txt", "r");
   if (archivo == NULL)
   {
     printf("Error al abrir el archivo.\n");
@@ -37,10 +36,11 @@ int main()
 
   qsort(articulos, count, sizeof(Articulo), comparar);
 
-  printf("Codigo\tMarca\tModelo\tPrecio\n");
+  printf("%-10s %-20s %-35s %-10s\n", "Codigo", "Marca", "Modelo", "Precio");
+
   for (int i = 0; i < count; i++)
   {
-    printf("%d\t%s\t%s\t%.2f\n", articulos[i].codigo, articulos[i].marca, articulos[i].modelo, articulos[i].precio);
+    printf("%-10d %-20s %-35s %-10.2f\n", articulos[i].codigo, articulos[i].marca, articulos[i].modelo, articulos[i].precio);
   }
 
   return 0;

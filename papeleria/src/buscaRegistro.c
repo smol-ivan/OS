@@ -20,7 +20,7 @@ int main()
   printf("Ingrese el código a buscar: ");
   scanf("%d", &codigo_buscado);
 
-  archivo = fopen("papeleria.txt", "r");
+  archivo = fopen("data/papeleria.txt", "r");
   if (archivo == NULL)
   {
     printf("Error al abrir el archivo.\n");
@@ -31,8 +31,9 @@ int main()
   {
     if (articulo.codigo == codigo_buscado)
     {
-      printf("Codigo\tMarca\tModelo\tPrecio\n");
-      printf("%d\t%s\t%s\t%.2f\n", articulo.codigo, articulo.marca, articulo.modelo, articulo.precio);
+      printf("%-10s %-20s %-35s %-10s\n", "Codigo", "Marca", "Modelo", "Precio");
+      printf("%-10d %-20s %-35s %-10.2f\n", articulo.codigo, articulo.marca, articulo.modelo, articulo.precio);
+
       encontrado = 1;
       break;
     }

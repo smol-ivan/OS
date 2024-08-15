@@ -1,0 +1,10 @@
+001, BIC, Bolígrafo Azul, 5.00
+002, Pilot, Bolígrafo Negro, 10.50
+003, Faber-Castell, Lápiz HB, 3.75
+004, Stabilo, Resaltador Amarillo, 12.00
+005, Pentel, Marcador Permanente Negro, 7.25
+006, Maped, Goma de Borrar, 4.00
+007, Staedtler, Compás de Precisión, 15.00
+008, Casio, Calculadora Científica FX-991, 250.00
+009, Scribe, Cuaderno Profesional 100 hojas, 22.00
+010, Norma, Cuaderno de Dibujo, 18.00

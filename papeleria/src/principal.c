@@ -16,27 +16,51 @@ int main()
     mostrar_menu();
     scanf(" %c", &opcion);
 
+    pid_t pid;
+
     if (opcion == 'a')
     {
-      system("ls -l");
+      pid = fork();
+
+      if (pid == 0)
+      {
+        execlp("ls", "ls", "-l", "data", NULL);
+
+        perror("Error al ejecutar ls");
+        exit(1);
+      }
+      else if (pid > 0)
+      {
+        wait(&status);
+      }
+      else
+      {
+        perror("Error al crear proceso hijo");
+        exit(1);
+      }
     }
     else if (opcion == 'b' || opcion == 'c')
     {
-      pid_t pid = fork();
+      pid = fork();
       if (pid == 0)
       {
         if (opcion == 'b')
         {
-          execl("./leeArchivo", "leeArchivo", NULL);
+          execl("./bin/leeArchivo", "leeArchivo", NULL);
         }
         else if (opcion == 'c')
         {
-          execl("./buscaRegistro", "buscaRegistro", NULL);
+          execl("./bin/buscaRegistro", "buscaRegistro", NULL);
         }
+      }
+      else if (pid > 0)
+      {
+        wait(&status);
       }
       else
       {
-        wait(&status);
+        perror("Error al crear proceso hijo");
+        exit(1);
       }
     }
     else if (opcion == 'd')
