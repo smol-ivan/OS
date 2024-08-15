@@ -77,7 +77,7 @@ int main()
 
 void mostrar_menu()
 {
-  printf("----------- Negocio X ---------------\n");
+  printf("----------- Papeleria ---------------\n");
   printf("a) Mostrar carpeta donde se encuentra el archivo a leer\n");
   printf("b) Leer el archivo del negocio X\n");
   printf("c) Buscar por clave en el archivo del negocio X\n");
