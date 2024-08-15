@@ -20,7 +20,7 @@ int main() {
       pid = fork();
 
       if (pid == 0) {
-        execlp("ls", "ls", "-l", "data", NULL);
+        execlp("ls", "ls", "-l", NULL);
 
         perror("Error al ejecutar ls");
         exit(1);
