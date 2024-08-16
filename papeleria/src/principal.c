@@ -16,38 +16,34 @@ int main() {
 
     pid_t pid;
 
-    if (opcion == 'a') {
-      pid = fork();
-
-      if (pid == 0) {
-        execlp("ls", "ls", "-l", NULL);
-
-        perror("Error al ejecutar ls");
-        exit(1);
-      } else if (pid > 0) {
-        wait(&status);
-      } else {
-        perror("Error al crear proceso hijo");
-        exit(1);
-      }
-    } else if (opcion == 'b' || opcion == 'c') {
-      pid = fork();
-      if (pid == 0) {
-        if (opcion == 'b') {
-          execl("./bin/leeArchivo", "leeArchivo", NULL);
-        } else if (opcion == 'c') {
-          execl("./bin/buscaRegistro", "buscaRegistro", NULL);
+    if (opcion == 'a' || opcion == 'b' || opcion == 'c') {
+      printf("Ejecutando...\n");
+      if (opcion == 'a') {
+        pid = fork();
+        if (pid == 0) {
+          execlp("ls", "ls", "-l", NULL);
+        } else if (pid > 0) {
+          wait(&status);
         }
-      } else if (pid > 0) {
-        wait(&status);
-      } else {
-        perror("Error al crear proceso hijo");
-        exit(1);
+      } else if (opcion == 'b') {
+        pid = fork();
+        if (pid == 0) {
+          execl("./bin/leeArchivo", "leeArchivo", NULL);
+        } else if (pid > 0) {
+          wait(&status);
+        }
+      } else if (opcion == 'c') {
+        pid = fork();
+        if (pid == 0) {
+          execl("./bin/buscaRegistro", "buscaRegistro", NULL);
+        } else if (pid > 0) {
+          wait(&status);
+        }
       }
     } else if (opcion == 'd') {
       exit(0);
     } else {
-      printf("Opción no válida\n");
+      printf("Opcion no valida\n");
     }
   }
   return 0;
