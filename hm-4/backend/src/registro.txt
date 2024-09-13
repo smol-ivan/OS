@@ -1,0 +1,6 @@
+Identificador,Producto,Marca,Precio,Cantidad
+2831924,Libro,Pritt,20,409
+7469015,Goma,Santillana,7,334
+6069558,Lapiz,Fabber Castell,13,618
+6508334,Lapiz,Staedtler,7,289
+4107129,Regla,Norma,5,194

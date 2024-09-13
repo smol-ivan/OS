@@ -1,0 +1,37 @@
+[
+  {
+    "Identificador": 2831924,
+    "Producto": "Libro",
+    "Marca": "Pritt",
+    "Precio": 20,
+    "Cantidad": 409
+  },
+  {
+    "Identificador": 7469015,
+    "Producto": "Goma",
+    "Marca": "Santillana",
+    "Precio": 7,
+    "Cantidad": 334
+  },
+  {
+    "Identificador": 6069558,
+    "Producto": "Lapiz",
+    "Marca": "Fabber Castell",
+    "Precio": 13,
+    "Cantidad": 618
+  },
+  {
+    "Identificador": 6508334,
+    "Producto": "Lapiz",
+    "Marca": "Staedtler",
+    "Precio": 7,
+    "Cantidad": 289
+  },
+  {
+    "Identificador": 4107129,
+    "Producto": "Regla",
+    "Marca": "Norma",
+    "Precio": 5,
+    "Cantidad": 194
+  }
+]
