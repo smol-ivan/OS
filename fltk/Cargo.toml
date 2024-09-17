@@ -1,0 +1,14 @@
+[package]
+name = "fltk"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+fltk = "1.4"
+fltk-table = "0.3"
+fltk-grid = "0.1"
+shared_memory = "0.12.4"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+raw_sync = "0.1.5"
+libc = "0.2"

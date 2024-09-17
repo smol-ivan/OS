@@ -1,0 +1,1433 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The system is: Darwin - 23.6.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: -ffunction-sections;-fdata-sections;-fPIC;--target=arm64-apple-darwin;-mmacosx-version-min=14.4
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is AppleClang, found in:
+        /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/3.30.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: -ffunction-sections;-fdata-sections;-fPIC;--target=arm64-apple-darwin;-mmacosx-version-min=14.4
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is AppleClang, found in:
+        /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/3.30.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Kq7gy1"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Kq7gy1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Kq7gy1'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2ba23/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_2ba23.dir/build.make CMakeFiles/cmTC_2ba23.dir/build
+        Building C object CMakeFiles/cmTC_2ba23.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_2ba23.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_2ba23.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_2ba23.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeCCompilerABI.c
+        Apple clang version 15.0.0 (clang-1500.3.9.4)
+        Target: arm64-apple-darwin
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+        clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.4.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Kq7gy1 -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_2ba23.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_2ba23.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Kq7gy1 -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_2ba23.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include
+         /Library/Developer/CommandLineTools/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking C executable cmTC_2ba23
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ba23.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_2ba23.dir/CMakeCCompilerABI.c.o -o cmTC_2ba23
+        Apple clang version 15.0.0 (clang-1500.3.9.4)
+        Target: arm64-apple-darwin
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.4.0 14.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o cmTC_2ba23 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_2ba23.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1053.12
+        BUILD 15:45:29 Feb  3 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.3.2.2)
+        Library search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/swift
+        Framework search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:113 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Effective list of requested architectures (possibly empty)  : "arm64"
+      Effective list of architectures found in the ABI info binary: "arm64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include]
+          add: [/Library/Developer/CommandLineTools/usr/include]
+        end of search list found
+        collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
+        implicit include dirs: [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Kq7gy1']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2ba23/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_2ba23.dir/build.make CMakeFiles/cmTC_2ba23.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_2ba23.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_2ba23.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_2ba23.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_2ba23.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Apple clang version 15.0.0 (clang-1500.3.9.4)]
+        ignore line: [Target: arm64-apple-darwin]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.4.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Kq7gy1 -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_2ba23.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_2ba23.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Kq7gy1 -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_2ba23.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_2ba23]
+        ignore line: [/opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ba23.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_2ba23.dir/CMakeCCompilerABI.c.o -o cmTC_2ba23]
+        ignore line: [Apple clang version 15.0.0 (clang-1500.3.9.4)]
+        ignore line: [Target: arm64-apple-darwin]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.4.0 14.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o cmTC_2ba23 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_2ba23.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+          arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [14.4.0] ==> ignore
+          arg [14.4] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_2ba23] ==> ignore
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_2ba23.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lSystem] ==> lib [System]
+          arg [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+        linker tool for 'C': /Library/Developer/CommandLineTools/usr/bin/ld
+        Library search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/swift]
+        Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks]
+        remove lib [System]
+        remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/swift] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/swift]
+        collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/swift]
+        implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Running the C compiler's linker: "/Library/Developer/CommandLineTools/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld PROJECT:ld-1053.12
+      BUILD 15:45:29 Feb  3 2024
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+      will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.3.2.2)
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Q8p6P9"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Q8p6P9"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Q8p6P9'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8ac1c/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8ac1c.dir/build.make CMakeFiles/cmTC_8ac1c.dir/build
+        Building CXX object CMakeFiles/cmTC_8ac1c.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_8ac1c.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_8ac1c.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_8ac1c.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Apple clang version 15.0.0 (clang-1500.3.9.4)
+        Target: arm64-apple-darwin
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+        clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.4.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Q8p6P9 -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_8ac1c.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_8ac1c.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Q8p6P9 -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_8ac1c.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1
+         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include
+         /Library/Developer/CommandLineTools/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking CXX executable cmTC_8ac1c
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ac1c.dir/link.txt --verbose=1
+        /usr/bin/c++  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_8ac1c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8ac1c
+        Apple clang version 15.0.0 (clang-1500.3.9.4)
+        Target: arm64-apple-darwin
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.4.0 14.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o cmTC_8ac1c -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_8ac1c.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1053.12
+        BUILD 15:45:29 Feb  3 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.3.2.2)
+        Library search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/swift
+        Framework search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:113 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Effective list of requested architectures (possibly empty)  : "arm64"
+      Effective list of architectures found in the ABI info binary: "arm64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1]
+          add: [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include]
+          add: [/Library/Developer/CommandLineTools/usr/include]
+        end of search list found
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
+        implicit include dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1;/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Q8p6P9']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8ac1c/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8ac1c.dir/build.make CMakeFiles/cmTC_8ac1c.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_8ac1c.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_8ac1c.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_8ac1c.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_8ac1c.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Apple clang version 15.0.0 (clang-1500.3.9.4)]
+        ignore line: [Target: arm64-apple-darwin]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.4.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Q8p6P9 -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_8ac1c.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_8ac1c.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Q8p6P9 -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_8ac1c.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_8ac1c]
+        ignore line: [/opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ac1c.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_8ac1c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8ac1c]
+        ignore line: [Apple clang version 15.0.0 (clang-1500.3.9.4)]
+        ignore line: [Target: arm64-apple-darwin]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.4.0 14.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o cmTC_8ac1c -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_8ac1c.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+          arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [14.4.0] ==> ignore
+          arg [14.4] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_8ac1c] ==> ignore
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_8ac1c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lSystem] ==> lib [System]
+          arg [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+        linker tool for 'CXX': /Library/Developer/CommandLineTools/usr/bin/ld
+        Library search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/swift]
+        Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks]
+        remove lib [System]
+        remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/swift] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/swift]
+        collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks]
+        implicit libs: [c++]
+        implicit objs: []
+        implicit dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/swift]
+        implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Running the CXX compiler's linker: "/Library/Developer/CommandLineTools/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld PROJECT:ld-1053.12
+      BUILD 15:45:29 Feb  3 2024
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+      will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.3.2.2)
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckTypeSize.cmake:251 (check_include_file)"
+      - "fltk/CMake/setup.cmake:158 (CHECK_TYPE_SIZE)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-dST7BM"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-dST7BM"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-dST7BM'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1cf93/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_1cf93.dir/build.make CMakeFiles/cmTC_1cf93.dir/build
+        Building C object CMakeFiles/cmTC_1cf93.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_1cf93.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_1cf93.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_1cf93.dir/CheckIncludeFile.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-dST7BM/CheckIncludeFile.c
+        Linking C executable cmTC_1cf93
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1cf93.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_1cf93.dir/CheckIncludeFile.c.o -o cmTC_1cf93
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckTypeSize.cmake:252 (check_include_file)"
+      - "fltk/CMake/setup.cmake:158 (CHECK_TYPE_SIZE)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-281dIX"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-281dIX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-281dIX'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cc618/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_cc618.dir/build.make CMakeFiles/cmTC_cc618.dir/build
+        Building C object CMakeFiles/cmTC_cc618.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_cc618.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_cc618.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_cc618.dir/CheckIncludeFile.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-281dIX/CheckIncludeFile.c
+        Linking C executable cmTC_cc618
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc618.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_cc618.dir/CheckIncludeFile.c.o -o cmTC_cc618
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckTypeSize.cmake:253 (check_include_file)"
+      - "fltk/CMake/setup.cmake:158 (CHECK_TYPE_SIZE)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Ns0ORw"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Ns0ORw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Ns0ORw'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8a0cf/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8a0cf.dir/build.make CMakeFiles/cmTC_8a0cf.dir/build
+        Building C object CMakeFiles/cmTC_8a0cf.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_8a0cf.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_8a0cf.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_8a0cf.dir/CheckIncludeFile.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Ns0ORw/CheckIncludeFile.c
+        Linking C executable cmTC_8a0cf
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a0cf.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_8a0cf.dir/CheckIncludeFile.c.o -o cmTC_8a0cf
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "fltk/CMake/setup.cmake:158 (CHECK_TYPE_SIZE)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    checks:
+      - "Check size of short"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-rlkunZ"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-rlkunZ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_SIZEOF_SHORT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-rlkunZ'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_39fe2/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_39fe2.dir/build.make CMakeFiles/cmTC_39fe2.dir/build
+        Building C object CMakeFiles/cmTC_39fe2.dir/SIZEOF_SHORT.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_39fe2.dir/SIZEOF_SHORT.c.o -MF CMakeFiles/cmTC_39fe2.dir/SIZEOF_SHORT.c.o.d -o CMakeFiles/cmTC_39fe2.dir/SIZEOF_SHORT.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-rlkunZ/SIZEOF_SHORT.c
+        Linking C executable cmTC_39fe2
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39fe2.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_39fe2.dir/SIZEOF_SHORT.c.o -o cmTC_39fe2
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "fltk/CMake/setup.cmake:159 (CHECK_TYPE_SIZE)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    checks:
+      - "Check size of int"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-t0l7bE"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-t0l7bE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_SIZEOF_INT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-t0l7bE'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_31e8f/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_31e8f.dir/build.make CMakeFiles/cmTC_31e8f.dir/build
+        Building C object CMakeFiles/cmTC_31e8f.dir/SIZEOF_INT.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_31e8f.dir/SIZEOF_INT.c.o -MF CMakeFiles/cmTC_31e8f.dir/SIZEOF_INT.c.o.d -o CMakeFiles/cmTC_31e8f.dir/SIZEOF_INT.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-t0l7bE/SIZEOF_INT.c
+        Linking C executable cmTC_31e8f
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31e8f.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_31e8f.dir/SIZEOF_INT.c.o -o cmTC_31e8f
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "fltk/CMake/setup.cmake:160 (CHECK_TYPE_SIZE)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    checks:
+      - "Check size of long"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-mBWR76"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-mBWR76"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_SIZEOF_LONG"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-mBWR76'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e6ea0/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e6ea0.dir/build.make CMakeFiles/cmTC_e6ea0.dir/build
+        Building C object CMakeFiles/cmTC_e6ea0.dir/SIZEOF_LONG.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_e6ea0.dir/SIZEOF_LONG.c.o -MF CMakeFiles/cmTC_e6ea0.dir/SIZEOF_LONG.c.o.d -o CMakeFiles/cmTC_e6ea0.dir/SIZEOF_LONG.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-mBWR76/SIZEOF_LONG.c
+        Linking C executable cmTC_e6ea0
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6ea0.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e6ea0.dir/SIZEOF_LONG.c.o -o cmTC_e6ea0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "fltk/CMake/setup.cmake:161 (CHECK_TYPE_SIZE)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    checks:
+      - "Check size of long long"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-CtnTHc"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-CtnTHc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_HAVE_LONG_LONG"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-CtnTHc'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f2182/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f2182.dir/build.make CMakeFiles/cmTC_f2182.dir/build
+        Building C object CMakeFiles/cmTC_f2182.dir/HAVE_LONG_LONG.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_f2182.dir/HAVE_LONG_LONG.c.o -MF CMakeFiles/cmTC_f2182.dir/HAVE_LONG_LONG.c.o.d -o CMakeFiles/cmTC_f2182.dir/HAVE_LONG_LONG.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-CtnTHc/HAVE_LONG_LONG.c
+        Linking C executable cmTC_f2182
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2182.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f2182.dir/HAVE_LONG_LONG.c.o -o cmTC_f2182
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:56 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-GZ2Hbg"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-GZ2Hbg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_ALSA_ASOUNDLIB_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-GZ2Hbg'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d9f01/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d9f01.dir/build.make CMakeFiles/cmTC_d9f01.dir/build
+        Building C object CMakeFiles/cmTC_d9f01.dir/HAVE_ALSA_ASOUNDLIB_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_d9f01.dir/HAVE_ALSA_ASOUNDLIB_H.c.o -MF CMakeFiles/cmTC_d9f01.dir/HAVE_ALSA_ASOUNDLIB_H.c.o.d -o CMakeFiles/cmTC_d9f01.dir/HAVE_ALSA_ASOUNDLIB_H.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-GZ2Hbg/HAVE_ALSA_ASOUNDLIB_H.c
+        /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-GZ2Hbg/HAVE_ALSA_ASOUNDLIB_H.c:2:10: fatal error: 'alsa/asoundlib.h' file not found
+        #include <alsa/asoundlib.h>
+                 ^~~~~~~~~~~~~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_d9f01.dir/HAVE_ALSA_ASOUNDLIB_H.c.o] Error 1
+        make: *** [cmTC_d9f01/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:57 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-DzKFyM"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-DzKFyM"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_DLFCN_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-DzKFyM'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e11d2/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e11d2.dir/build.make CMakeFiles/cmTC_e11d2.dir/build
+        Building C object CMakeFiles/cmTC_e11d2.dir/HAVE_DLFCN_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_e11d2.dir/HAVE_DLFCN_H.c.o -MF CMakeFiles/cmTC_e11d2.dir/HAVE_DLFCN_H.c.o.d -o CMakeFiles/cmTC_e11d2.dir/HAVE_DLFCN_H.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-DzKFyM/HAVE_DLFCN_H.c
+        Linking C executable cmTC_e11d2
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e11d2.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e11d2.dir/HAVE_DLFCN_H.c.o -o cmTC_e11d2
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:58 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-z6VB8P"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-z6VB8P"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_GL_GLU_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-z6VB8P'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bd127/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_bd127.dir/build.make CMakeFiles/cmTC_bd127.dir/build
+        Building C object CMakeFiles/cmTC_bd127.dir/HAVE_GL_GLU_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_bd127.dir/HAVE_GL_GLU_H.c.o -MF CMakeFiles/cmTC_bd127.dir/HAVE_GL_GLU_H.c.o.d -o CMakeFiles/cmTC_bd127.dir/HAVE_GL_GLU_H.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-z6VB8P/HAVE_GL_GLU_H.c
+        /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-z6VB8P/HAVE_GL_GLU_H.c:2:10: fatal error: 'GL/glu.h' file not found
+        #include <GL/glu.h>
+                 ^~~~~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_bd127.dir/HAVE_GL_GLU_H.c.o] Error 1
+        make: *** [cmTC_bd127/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:59 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-PHI34x"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-PHI34x"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_LOCALE_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-PHI34x'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_847ad/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_847ad.dir/build.make CMakeFiles/cmTC_847ad.dir/build
+        Building C object CMakeFiles/cmTC_847ad.dir/HAVE_LOCALE_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_847ad.dir/HAVE_LOCALE_H.c.o -MF CMakeFiles/cmTC_847ad.dir/HAVE_LOCALE_H.c.o.d -o CMakeFiles/cmTC_847ad.dir/HAVE_LOCALE_H.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-PHI34x/HAVE_LOCALE_H.c
+        Linking C executable cmTC_847ad
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_847ad.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_847ad.dir/HAVE_LOCALE_H.c.o -o cmTC_847ad
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:60 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-kzDyFO"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-kzDyFO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_OPENGL_GLU_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-kzDyFO'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d6229/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d6229.dir/build.make CMakeFiles/cmTC_d6229.dir/build
+        Building C object CMakeFiles/cmTC_d6229.dir/HAVE_OPENGL_GLU_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_d6229.dir/HAVE_OPENGL_GLU_H.c.o -MF CMakeFiles/cmTC_d6229.dir/HAVE_OPENGL_GLU_H.c.o.d -o CMakeFiles/cmTC_d6229.dir/HAVE_OPENGL_GLU_H.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-kzDyFO/HAVE_OPENGL_GLU_H.c
+        Linking C executable cmTC_d6229
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d6229.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d6229.dir/HAVE_OPENGL_GLU_H.c.o -o cmTC_d6229
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:61 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-iZfF2Z"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-iZfF2Z"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_STDIO_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-iZfF2Z'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_18472/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_18472.dir/build.make CMakeFiles/cmTC_18472.dir/build
+        Building C object CMakeFiles/cmTC_18472.dir/HAVE_STDIO_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_18472.dir/HAVE_STDIO_H.c.o -MF CMakeFiles/cmTC_18472.dir/HAVE_STDIO_H.c.o.d -o CMakeFiles/cmTC_18472.dir/HAVE_STDIO_H.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-iZfF2Z/HAVE_STDIO_H.c
+        Linking C executable cmTC_18472
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18472.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_18472.dir/HAVE_STDIO_H.c.o -o cmTC_18472
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:62 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-qaieGY"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-qaieGY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_STRINGS_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-qaieGY'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bd7ee/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_bd7ee.dir/build.make CMakeFiles/cmTC_bd7ee.dir/build
+        Building C object CMakeFiles/cmTC_bd7ee.dir/HAVE_STRINGS_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_bd7ee.dir/HAVE_STRINGS_H.c.o -MF CMakeFiles/cmTC_bd7ee.dir/HAVE_STRINGS_H.c.o.d -o CMakeFiles/cmTC_bd7ee.dir/HAVE_STRINGS_H.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-qaieGY/HAVE_STRINGS_H.c
+        Linking C executable cmTC_bd7ee
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd7ee.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_bd7ee.dir/HAVE_STRINGS_H.c.o -o cmTC_bd7ee
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:63 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-c8EOoa"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-c8EOoa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_SYS_SELECT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-c8EOoa'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c93ba/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c93ba.dir/build.make CMakeFiles/cmTC_c93ba.dir/build
+        Building C object CMakeFiles/cmTC_c93ba.dir/HAVE_SYS_SELECT_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_c93ba.dir/HAVE_SYS_SELECT_H.c.o -MF CMakeFiles/cmTC_c93ba.dir/HAVE_SYS_SELECT_H.c.o.d -o CMakeFiles/cmTC_c93ba.dir/HAVE_SYS_SELECT_H.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-c8EOoa/HAVE_SYS_SELECT_H.c
+        Linking C executable cmTC_c93ba
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c93ba.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_c93ba.dir/HAVE_SYS_SELECT_H.c.o -o cmTC_c93ba
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:64 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-DANImh"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-DANImh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_SYS_STDTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-DANImh'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ad687/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ad687.dir/build.make CMakeFiles/cmTC_ad687.dir/build
+        Building C object CMakeFiles/cmTC_ad687.dir/HAVE_SYS_STDTYPES_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_ad687.dir/HAVE_SYS_STDTYPES_H.c.o -MF CMakeFiles/cmTC_ad687.dir/HAVE_SYS_STDTYPES_H.c.o.d -o CMakeFiles/cmTC_ad687.dir/HAVE_SYS_STDTYPES_H.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-DANImh/HAVE_SYS_STDTYPES_H.c
+        /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-DANImh/HAVE_SYS_STDTYPES_H.c:2:10: fatal error: 'sys/stdtypes.h' file not found
+        #include <sys/stdtypes.h>
+                 ^~~~~~~~~~~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_ad687.dir/HAVE_SYS_STDTYPES_H.c.o] Error 1
+        make: *** [cmTC_ad687/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:66 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-kw7tgu"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-kw7tgu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_X11_XREGION_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-kw7tgu'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f675e/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f675e.dir/build.make CMakeFiles/cmTC_f675e.dir/build
+        Building C object CMakeFiles/cmTC_f675e.dir/HAVE_X11_XREGION_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_f675e.dir/HAVE_X11_XREGION_H.c.o -MF CMakeFiles/cmTC_f675e.dir/HAVE_X11_XREGION_H.c.o.d -o CMakeFiles/cmTC_f675e.dir/HAVE_X11_XREGION_H.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-kw7tgu/HAVE_X11_XREGION_H.c
+        /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-kw7tgu/HAVE_X11_XREGION_H.c:2:10: fatal error: 'X11/Xlib.h' file not found
+        #include <X11/Xlib.h>
+                 ^~~~~~~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_f675e.dir/HAVE_X11_XREGION_H.c.o] Error 1
+        make: *** [cmTC_f675e/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:72 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-mpHiGh"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-mpHiGh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_PTHREAD_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-mpHiGh'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b71d9/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b71d9.dir/build.make CMakeFiles/cmTC_b71d9.dir/build
+        Building C object CMakeFiles/cmTC_b71d9.dir/HAVE_PTHREAD_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_b71d9.dir/HAVE_PTHREAD_H.c.o -MF CMakeFiles/cmTC_b71d9.dir/HAVE_PTHREAD_H.c.o.d -o CMakeFiles/cmTC_b71d9.dir/HAVE_PTHREAD_H.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-mpHiGh/HAVE_PTHREAD_H.c
+        Linking C executable cmTC_b71d9
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b71d9.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_b71d9.dir/HAVE_PTHREAD_H.c.o -o cmTC_b71d9
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "fltk/CMake/resources.cmake:78 (try_compile)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/fltk/CMakeFiles/CMakeTmp"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/fltk/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_PTHREAD_MUTEX_RECURSIVE"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/fltk/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_64b76/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_64b76.dir/build.make CMakeFiles/cmTC_64b76.dir/build
+        Building C object CMakeFiles/cmTC_64b76.dir/pthread_mutex_recursive.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_64b76.dir/pthread_mutex_recursive.c.o -MF CMakeFiles/cmTC_64b76.dir/pthread_mutex_recursive.c.o.d -o CMakeFiles/cmTC_64b76.dir/pthread_mutex_recursive.c.o -c /Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake/pthread_mutex_recursive.c
+        Linking C executable cmTC_64b76
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64b76.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_64b76.dir/pthread_mutex_recursive.c.o -o cmTC_64b76
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "fltk/CMake/resources.cmake:186 (check_function_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Ua8CDo"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Ua8CDo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_DLSYM"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Ua8CDo'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_886fa/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_886fa.dir/build.make CMakeFiles/cmTC_886fa.dir/build
+        Building C object CMakeFiles/cmTC_886fa.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4 -DCHECK_FUNCTION_EXISTS=dlsym -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_886fa.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_886fa.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_886fa.dir/CheckFunctionExists.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Ua8CDo/CheckFunctionExists.c
+        Linking C executable cmTC_886fa
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_886fa.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4 -DCHECK_FUNCTION_EXISTS=dlsym -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_886fa.dir/CheckFunctionExists.c.o -o cmTC_886fa
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "fltk/CMake/resources.cmake:189 (check_function_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Zcqo2S"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Zcqo2S"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_LOCALECONV"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Zcqo2S'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_96b2f/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_96b2f.dir/build.make CMakeFiles/cmTC_96b2f.dir/build
+        Building C object CMakeFiles/cmTC_96b2f.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4 -DCHECK_FUNCTION_EXISTS=localeconv -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_96b2f.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_96b2f.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_96b2f.dir/CheckFunctionExists.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Zcqo2S/CheckFunctionExists.c
+        Linking C executable cmTC_96b2f
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96b2f.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4 -DCHECK_FUNCTION_EXISTS=localeconv -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_96b2f.dir/CheckFunctionExists.c.o -o cmTC_96b2f
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "fltk/CMake/resources.cmake:193 (check_function_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-6N6wRz"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-6N6wRz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_PNG_GET_VALID"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-6N6wRz'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cf5a3/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_cf5a3.dir/build.make CMakeFiles/cmTC_cf5a3.dir/build
+        Building C object CMakeFiles/cmTC_cf5a3.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4 -DCHECK_FUNCTION_EXISTS=png_get_valid -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_cf5a3.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_cf5a3.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_cf5a3.dir/CheckFunctionExists.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-6N6wRz/CheckFunctionExists.c
+        Linking C executable cmTC_cf5a3
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf5a3.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4 -DCHECK_FUNCTION_EXISTS=png_get_valid -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_cf5a3.dir/CheckFunctionExists.c.o -o cmTC_cf5a3  /opt/homebrew/lib/libpng.dylib
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "fltk/CMake/resources.cmake:194 (check_function_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-10LhCw"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-10LhCw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_PNG_SET_TRNS_TO_ALPHA"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-10LhCw'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_63abd/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_63abd.dir/build.make CMakeFiles/cmTC_63abd.dir/build
+        Building C object CMakeFiles/cmTC_63abd.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4 -DCHECK_FUNCTION_EXISTS=png_set_tRNS_to_alpha -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_63abd.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_63abd.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_63abd.dir/CheckFunctionExists.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-10LhCw/CheckFunctionExists.c
+        Linking C executable cmTC_63abd
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63abd.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4 -DCHECK_FUNCTION_EXISTS=png_set_tRNS_to_alpha -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_63abd.dir/CheckFunctionExists.c.o -o cmTC_63abd  /opt/homebrew/lib/libpng.dylib
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "fltk/CMake/resources.cmake:208 (check_function_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-55fhIW"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-55fhIW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_STRLCAT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-55fhIW'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_041a5/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_041a5.dir/build.make CMakeFiles/cmTC_041a5.dir/build
+        Building C object CMakeFiles/cmTC_041a5.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4 -DCHECK_FUNCTION_EXISTS=strlcat -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_041a5.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_041a5.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_041a5.dir/CheckFunctionExists.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-55fhIW/CheckFunctionExists.c
+        /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-55fhIW/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'strlcat' [-Wincompatible-library-redeclaration]
+          CHECK_FUNCTION_EXISTS(void);
+          ^
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+        #define CHECK_FUNCTION_EXISTS strlcat
+                                      ^
+        /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-55fhIW/CheckFunctionExists.c:7:3: note: 'strlcat' is a builtin with type 'unsigned long (char *, const char *, unsigned long)'
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+        #define CHECK_FUNCTION_EXISTS strlcat
+                                      ^
+        1 warning generated.
+        Linking C executable cmTC_041a5
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_041a5.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4 -DCHECK_FUNCTION_EXISTS=strlcat -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_041a5.dir/CheckFunctionExists.c.o -o cmTC_041a5
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "fltk/CMake/resources.cmake:209 (check_function_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-7WMbVr"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-7WMbVr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_STRLCPY"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-7WMbVr'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8b68d/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8b68d.dir/build.make CMakeFiles/cmTC_8b68d.dir/build
+        Building C object CMakeFiles/cmTC_8b68d.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4 -DCHECK_FUNCTION_EXISTS=strlcpy -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_8b68d.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_8b68d.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_8b68d.dir/CheckFunctionExists.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-7WMbVr/CheckFunctionExists.c
+        /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-7WMbVr/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'strlcpy' [-Wincompatible-library-redeclaration]
+          CHECK_FUNCTION_EXISTS(void);
+          ^
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+        #define CHECK_FUNCTION_EXISTS strlcpy
+                                      ^
+        /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-7WMbVr/CheckFunctionExists.c:7:3: note: 'strlcpy' is a builtin with type 'unsigned long (char *, const char *, unsigned long)'
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+        #define CHECK_FUNCTION_EXISTS strlcpy
+                                      ^
+        1 warning generated.
+        Linking C executable cmTC_8b68d
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b68d.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4 -DCHECK_FUNCTION_EXISTS=strlcpy -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_8b68d.dir/CheckFunctionExists.c.o -o cmTC_8b68d
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "fltk/CMake/resources.cmake:212 (check_function_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-3HnQgh"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-3HnQgh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_SETENV"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-3HnQgh'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5f9a3/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_5f9a3.dir/build.make CMakeFiles/cmTC_5f9a3.dir/build
+        Building C object CMakeFiles/cmTC_5f9a3.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4 -DCHECK_FUNCTION_EXISTS=setenv -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_5f9a3.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_5f9a3.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_5f9a3.dir/CheckFunctionExists.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-3HnQgh/CheckFunctionExists.c
+        Linking C executable cmTC_5f9a3
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f9a3.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4 -DCHECK_FUNCTION_EXISTS=setenv -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_5f9a3.dir/CheckFunctionExists.c.o -o cmTC_5f9a3
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "fltk/CMake/resources.cmake:218 (check_function_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Ofa4B6"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Ofa4B6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "HAVE_TRUNC"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Ofa4B6'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fdee5/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_fdee5.dir/build.make CMakeFiles/cmTC_fdee5.dir/build
+        Building C object CMakeFiles/cmTC_fdee5.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4 -DCHECK_FUNCTION_EXISTS=trunc -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_fdee5.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_fdee5.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_fdee5.dir/CheckFunctionExists.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Ofa4B6/CheckFunctionExists.c
+        /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Ofa4B6/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'trunc' [-Wincompatible-library-redeclaration]
+          CHECK_FUNCTION_EXISTS(void);
+          ^
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+        #define CHECK_FUNCTION_EXISTS trunc
+                                      ^
+        /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-Ofa4B6/CheckFunctionExists.c:7:3: note: 'trunc' is a builtin with type 'double (double)'
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+        #define CHECK_FUNCTION_EXISTS trunc
+                                      ^
+        1 warning generated.
+        Linking C executable cmTC_fdee5
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fdee5.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4 -DCHECK_FUNCTION_EXISTS=trunc -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_fdee5.dir/CheckFunctionExists.c.o -o cmTC_fdee5  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/libm.tbd
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "fltk/CMake/resources.cmake:224 (try_compile)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/fltk/CMakeFiles/CMakeTmp"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/fltk/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4 -fno-exceptions -Wno-deprecated"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "V"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/fltk/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5dea0/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_5dea0.dir/build.make CMakeFiles/cmTC_5dea0.dir/build
+        Building CXX object CMakeFiles/cmTC_5dea0.dir/posixScandir.cxx.o
+        /usr/bin/c++   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4 -fno-exceptions -Wno-deprecated  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_5dea0.dir/posixScandir.cxx.o -MF CMakeFiles/cmTC_5dea0.dir/posixScandir.cxx.o.d -o CMakeFiles/cmTC_5dea0.dir/posixScandir.cxx.o -c /Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake/posixScandir.cxx
+        Linking CXX executable cmTC_5dea0
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5dea0.dir/link.txt --verbose=1
+        /usr/bin/c++  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4 -fno-exceptions -Wno-deprecated  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_5dea0.dir/posixScandir.cxx.o -o cmTC_5dea0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/opt/homebrew/Cellar/cmake/3.30.3/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "fltk/CMake/options.cmake:739 (include)"
+      - "fltk/CMakeLists.txt:78 (include)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-5YVUCj"
+      binary: "/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-5YVUCj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-5YVUCj'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c14f0/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c14f0.dir/build.make CMakeFiles/cmTC_c14f0.dir/build
+        Building C object CMakeFiles/cmTC_c14f0.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_c14f0.dir/src.c.o -MF CMakeFiles/cmTC_c14f0.dir/src.c.o.d -o CMakeFiles/cmTC_c14f0.dir/src.c.o -c /Users/smol/code/OS/fltk/target/debug/build/fltk-sys-c5ad1b773c033b80/out/build/CMakeFiles/CMakeScratch/TryCompile-5YVUCj/src.c
+        Linking C executable cmTC_c14f0
+        /opt/homebrew/Cellar/cmake/3.30.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c14f0.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-darwin -mmacosx-version-min=14.4  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_c14f0.dir/src.c.o -o cmTC_c14f0
+        
+      exitCode: 0
+...

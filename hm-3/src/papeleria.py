@@ -28,8 +28,8 @@ def handle_opcion(func: Callable[[], None])->None:
         print(f'Proceso terminado\n')
 
 def main()->None:
-    opcion:chr = ''
-    opciones: List[chr] = ['a', 'b', 'c']
+    opcion:str = ''
+    opciones: List[str] = ['a', 'b', 'c']
 
     while (True):
         mostrar_menu()

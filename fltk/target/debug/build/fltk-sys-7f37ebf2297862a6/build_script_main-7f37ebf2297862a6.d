@@ -1,0 +1,11 @@
+/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-7f37ebf2297862a6/build_script_main-7f37ebf2297862a6: /Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/build/main.rs /Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/build/android.rs /Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/build/bundled.rs /Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/build/link.rs /Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/build/pkg_config.rs /Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/build/source.rs /Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/build/utils.rs
+
+/Users/smol/code/OS/fltk/target/debug/build/fltk-sys-7f37ebf2297862a6/build_script_main-7f37ebf2297862a6.d: /Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/build/main.rs /Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/build/android.rs /Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/build/bundled.rs /Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/build/link.rs /Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/build/pkg_config.rs /Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/build/source.rs /Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/build/utils.rs
+
+/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/build/main.rs:
+/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/build/android.rs:
+/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/build/bundled.rs:
+/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/build/link.rs:
+/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/build/pkg_config.rs:
+/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/build/source.rs:
+/Users/smol/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fltk-sys-1.4.33/build/utils.rs:

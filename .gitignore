@@ -1,3 +1,4 @@
 papeleria/.vscode/
 papeleria/bin/*
-
+# Generated files
+hm-4/backend/target/

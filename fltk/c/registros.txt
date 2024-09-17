@@ -1,0 +1,16 @@
+Identificador,Producto,Marca,Precio,Cantidad
+2831924,Libro,Pritt,20,2
+7469015,Goma,Santillana,7,1
+6069558,Lapiz,Fabber Castell,13,1
+6508334,Lapiz,Staedtler,7,2
+4107129,Regla,Norma,5,1
+
+
+[
+["Identificador","Producto","Marca","Precio","Cantidad"],
+["2831924","Libro","Pritt","20","2"],
+["7469015","Goma","Santillana","7","1"],
+["6069558","Lapiz","FabberCastell","13","1"],
+["6508334","Lapiz","Staedtler","7","2"],
+["4107129","Regla","Norma","5","1"]
+]

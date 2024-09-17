@@ -1,3 +1,7 @@
 ### Recuperar articulos
 
-GET http://127.0.0.1:1234/articulos
+GET http://192.168.3.213:1234/articulos
+
+### Recuperar articulo
+
+GET http://192.168.3.213:1234/articulo?no_articulo=1
