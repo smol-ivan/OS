@@ -1,0 +1,1 @@
+/Users/smol/code/OS/fltk/target/debug/Tarea04: /Users/smol/code/OS/fltk/src/main.rs /Users/smol/code/OS/fltk/src/models.rs /Users/smol/code/OS/fltk/src/scene.rs /Users/smol/code/OS/fltk/src/sh.rs /Users/smol/code/OS/fltk/src/shared_memory.rs
