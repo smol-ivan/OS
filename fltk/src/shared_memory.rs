@@ -7,28 +7,7 @@ use std::ptr;
 const FILE_KEY: &str = "/bin/cat";
 const SHM_KEY: i32 = 9;
 
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct Registro {
-    pub id: i32,
-    pub producto: [u8; 50],
-    pub marca: [u8; 50],
-    pub precio: i32,
-    pub cantidad: i32,
-}
-
-impl Registro {
-    fn new(id: i32, producto: [u8; 50], marca: [u8; 50], precio: i32, cantidad: i32) -> Self {
-        let registro = Registro {
-            id,
-            producto,
-            marca,
-            precio,
-            cantidad,
-        };
-        registro
-    }
-}
+use crate::models::Registro;
 
 pub fn byte_array_to_string(array: &[u8; 50]) -> String {
     let mut s = String::new();

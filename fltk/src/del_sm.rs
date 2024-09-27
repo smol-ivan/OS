@@ -7,15 +7,7 @@ use std::ptr;
 const FILE_KEY: &str = "/bin/cat";
 const SHM_KEY: i32 = 9;
 
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct Registro {
-    pub id: i32,
-    pub producto: [u8; 50],
-    pub marca: [u8; 50],
-    pub precio: i32,
-    pub cantidad: i32,
-}
+use Tarea04::models::Registro;
 
 fn borrar_shared_memory() {
     let file_key = CString::new(FILE_KEY).expect("CString::new failed");

@@ -7,31 +7,10 @@ use std::fs::File;
 use std::io::BufReader;
 use std::ptr;
 
+use Tarea04::models::Registro;
+
 const FILE_KEY: &str = "/bin/cat";
 const SHM_KEY: i32 = 9;
-
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct Registro {
-    pub id: i32,
-    pub producto: [u8; 50],
-    pub marca: [u8; 50],
-    pub precio: i32,
-    pub cantidad: i32,
-}
-
-impl Registro {
-    fn new(id: i32, producto: [u8; 50], marca: [u8; 50], precio: i32, cantidad: i32) -> Self {
-        let registro = Registro {
-            id,
-            producto,
-            marca,
-            precio,
-            cantidad,
-        };
-        registro
-    }
-}
 
 fn string_to_byte_array(s: &str) -> [u8; 50] {
     let mut array = [0u8; 50];

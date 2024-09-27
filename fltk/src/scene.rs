@@ -1,4 +1,4 @@
-use fltk::{app, button::Button, group::Group, prelude::*, window::Window};
+use fltk::{group::Group, prelude::*};
 
 pub fn switch_to_compra_articulo(group_menu: &mut Group, group_compra: &mut Group) {
     group_menu.hide();

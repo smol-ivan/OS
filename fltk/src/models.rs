@@ -1,15 +1,28 @@
-use crate::shared_memory::{get_shared_memory, Registro};
-use serde::{Deserialize, Serialize};
+use crate::shared_memory::get_shared_memory;
 use std::cell::RefCell;
 use std::rc::Rc;
 
-#[derive(Serialize, Deserialize, Debug)]
-pub struct Articulo {
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct Registro {
     pub id: i32,
-    pub nombre: String,
-    pub marca: String,
+    pub producto: [u8; 50],
+    pub marca: [u8; 50],
     pub precio: i32,
     pub cantidad: i32,
+}
+
+impl Registro {
+    pub fn new(id: i32, producto: [u8; 50], marca: [u8; 50], precio: i32, cantidad: i32) -> Self {
+        let registro = Registro {
+            id,
+            producto,
+            marca,
+            precio,
+            cantidad,
+        };
+        registro
+    }
 }
 
 #[derive(Clone, Copy)]

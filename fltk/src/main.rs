@@ -3,17 +3,15 @@ use fltk::{
 };
 
 use fltk_table::{SmartTable, TableOpts};
-use shared_memory::{simular_compra, sm_bloq_articulo, sm_desb_articulo};
 
-mod shared_memory;
-use crate::shared_memory::byte_array_to_string;
+use Tarea04::shared_memory::{
+    byte_array_to_string, simular_compra, sm_bloq_articulo, sm_desb_articulo,
+};
 
 mod scene;
 use scene::*;
 
-mod models;
-
-use crate::models::*;
+use Tarea04::models::*;
 
 fn main() {
     // Antes de iniciar la aplicación, se debe cargar la memoria compartida
